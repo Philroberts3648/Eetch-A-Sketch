@@ -21,14 +21,14 @@ button.addEventListener("click", () => {
     container.replaceChildren();
 
     for(let i = 1; i < ((numOfSquares * numOfSquares) + 1); i++) {
-    let grid = document.createElement("div");
-    grid.style.width = `${(containerWidth - 4) / numOfSquares}px`;
-    grid.style.height = `${(containerHeight - 4) / numOfSquares}px`;
-    grid.style.border = "1px solid red";
+        let grid = document.createElement("div");
+        grid.style.width = `${(containerWidth - 4) / numOfSquares}px`;
+        grid.style.height = `${(containerHeight - 4) / numOfSquares}px`;
+        grid.style.border = "1px solid red";
 
-    grid.addEventListener("mouseover", () => {
-        grid.style.backgroundColor = "blue";
-    })
-    container.appendChild(grid);
-}
+        grid.addEventListener("mouseover", () => {
+            grid.style.backgroundColor = "blue";
+        })
+        container.appendChild(grid);
+    }
 });
